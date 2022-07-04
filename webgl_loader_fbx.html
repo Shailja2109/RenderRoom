@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
-    <link type="text/css" rel="stylesheet" href="main.css" />
+    <link type="text/css" rel="stylesheet" href="/css/main.css" />
   </head>
 
   <body>
@@ -21,12 +21,12 @@
     </div>
 
     <script type="module">
-      import * as THREE from "./three.module.js";
+      import * as THREE from "./js/three.module.js";
 
-      import Stats from "./stats.module.js";
+      import Stats from "./js/stats.module.js";
 
-      import { OrbitControls } from "./OrbitControls.js";
-      import { FBXLoader } from "./GLTFLoader.js";
+      import { OrbitControls } from "./js/OrbitControls.js";
+      import { GLTFLoader } from "./js/GLTFLoader.js";
 
       let camera, scene, renderer, stats;
 
@@ -44,8 +44,8 @@
         camera = new THREE.PerspectiveCamera(
           45,
           window.innerWidth / window.innerHeight,
-          1,
-          2000
+          2,
+          500
         );
         camera.position.set(100, 200, 300);
 
